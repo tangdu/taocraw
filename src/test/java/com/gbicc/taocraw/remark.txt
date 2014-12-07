@@ -1,0 +1,9 @@
+#备注
+
+
+#默认搜索页面
+http://s.taobao.com/search?initiative_id=tbindexz_20141207&spm=1.7274553.1997520841.1&sourceId=tb.index&search_type=item&ssid=s5-e&commend=all&q=%E6%B1%BD%E8%BD%A6%E7%94%A8%E5%93%81&suggest=history_1&_input_charset=utf-8&wq=%E6%B1%BD%E8%BD%A6&suggest_query=%E6%B1%BD%E8%BD%A6&source=suggest&tab=all&bcoffset=1&s=44
+
+
+#加上城市限制
+http://s.taobao.com/search?initiative_id=tbindexz_20141207&tab=all&q=%C6%FB%B3%B5%D3%C3%C6%B7&suggest=history_1&source=suggest&loc=天津
