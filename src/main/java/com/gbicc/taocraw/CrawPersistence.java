@@ -89,7 +89,7 @@ public class CrawPersistence {
 		return body.getPager();
 	}
 	
-	//TODO　可采用多线程
+	//单线程
 	private void spiderEach(CrawGroup craw,Pager pager){
 		for(int i=2;i<=pager.getTotalPage();i++){//排除已抓取第一页
 			StringBuffer url=new StringBuffer(root);
