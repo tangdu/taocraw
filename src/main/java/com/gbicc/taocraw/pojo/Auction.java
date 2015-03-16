@@ -1,16 +1,34 @@
 package com.gbicc.taocraw.pojo;
 
 public class Auction {
+	/*
+	 * 评论数
+	 */
 	String comment_count;
+	/**
+	 * 
+	 */
 	String nick;
 	String nid;
 	String pid;
 	String reserve_price;
+	/**
+	 * 标题
+	 */
 	String title;
 	String user_id;
+	/**
+	 * 值标题
+	 */
 	String raw_title;
+	/**
+	 * 图片连接
+	 */
 	String pic_url;
 	String item_loc;
+	/**
+	 * 明细URL
+	 */
 	String detail_url;
 	String comment_url;
 	String view_sales;
@@ -18,6 +36,14 @@ public class Auction {
 	String view_fee;
 	String shopLink;
 	int sno;//排序号
+	Double sale_amount;//销售额
+	
+	public Double getSale_amount() {
+		return sale_amount;
+	}
+	public void setSale_amount(Double sale_amount) {
+		this.sale_amount = sale_amount;
+	}
 	public int getSno() {
 		return sno;
 	}
