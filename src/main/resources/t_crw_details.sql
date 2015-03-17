@@ -38,5 +38,6 @@ CREATE TABLE `t_crw_details` (
   `view_fee` varchar(20) DEFAULT NULL,
   `shopLink` varchar(200) DEFAULT NULL,
   `main_id` varchar(50) DEFAULT NULL,
-  `sno` bigint(20) DEFAULT NULL COMMENT '排序号'
+  `sno` bigint(20) DEFAULT NULL COMMENT '排序号',
+  `sale_amount` double(24.2) default null comment '商品销售额'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;

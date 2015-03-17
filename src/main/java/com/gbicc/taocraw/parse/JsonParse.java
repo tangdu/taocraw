@@ -10,6 +10,7 @@ public class JsonParse implements Parse{
 	@Override
 	public Object parseObject(String content) {
 		if(StringUtils.isNotBlank(content)){
+			//System.out.println(content);
 			return JSON.parseObject(content,Body.class);
 		}
 		return null;

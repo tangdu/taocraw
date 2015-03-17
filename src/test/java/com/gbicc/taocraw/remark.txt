@@ -39,3 +39,8 @@ queryMemberRight=true
 &timestamp=1426514004462
 
 http://detail.tmall.com/item.htm?id=14546932051&ad_id=&am_id=&cm_id=140105335569ed55e27b&pm_id=&abbucket=14
+
+参加聚划算 没有识别出来 
+http://ju.taobao.com/tg/home.htm?item_id=43917970406&tracelog=fromsearch&abbucket=0
+
+http://dskip.ju.taobao.com/detail/json/item_dynamic.htm?item_id=43917970406&id=10000006011256&_ksTS=1426551365286_65&callback=jsonp66

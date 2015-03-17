@@ -52,7 +52,7 @@ public class CrawPersistence {
 		LOGGER.error(root.toString());
 		//step1:抓取分页信息
 		Pager pager=getPages(craw);
-		pager.setTotalPage(1);
+		//pager.setTotalPage(1);
 		//step2:抓取分页数据
 		spiderEach(craw,pager);
 		//step2:抓取销售信息
@@ -116,7 +116,7 @@ public class CrawPersistence {
 			}
 		}
 	}
-	
+	//天猫销售量
 	private Double getXs(String link){
 		String t="";
 		String itemId="";
@@ -141,6 +141,15 @@ public class CrawPersistence {
 			return Double.valueOf(t);
 		} catch (Exception e) {
 			LOGGER.error("link is "+link+"--result--"+t+" id="+itemId+" error ",e);
+		}
+		return 0d;
+	}
+	//TODO 聚划算销售量
+	private Double getJhsSoldNum(String link){
+		try {
+			
+		} catch (Exception e) {
+			LOGGER.error("error",e);
 		}
 		return 0d;
 	}
@@ -177,7 +186,13 @@ public class CrawPersistence {
 	
 	//单线程
 	private void spiderEach(CrawGroup craw,Pager pager){
+		LOGGER.error("当前条件总页面...."+pager.getTotalPage()+"...开始抓取分页明细");
 		for(int i=2;i<=pager.getTotalPage();i++){//排除已抓取第一页
+			try {
+				Thread.sleep(300);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
 			StringBuffer url=new StringBuffer(root);
 			url.append("&data-key=s");
 			url.append("&data-value=").append((i-1)*pager.getPageSize());
